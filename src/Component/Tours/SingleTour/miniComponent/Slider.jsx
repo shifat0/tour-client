@@ -40,7 +40,7 @@ const Slider = () => {
                         <div className="relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group   bg-[url('https://cdn.pixabay.com/photo/2018/08/16/08/39/hallstatt-3609863__340.jpg')]  " >
                             <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b  via-transparent  hover:from-gray-700  to-gray-700from-gray-900  to-gray-900"></div>
                             <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                                <a rel="noopener noreferrer" href="#" className="px-3 py-2 text-xs font-semibold tracking-wider uppercase hover:underline  text-gray-100  bg-violet-400">3 Tours</a>
+                                {/* <a rel="noopener noreferrer" href="#" className="px-3 py-2 text-xs font-semibold tracking-wider uppercase hover:underline  text-gray-100  bg-violet-400">3 Tours</a> */}
                                 <div className="flex flex-col justify-start text-center  text-gray-100">
                                     <span className="text-3xl font-semibold leading-none tracking-wide">04</span>
                                     <span className="leading-none uppercase">Aug</span>
