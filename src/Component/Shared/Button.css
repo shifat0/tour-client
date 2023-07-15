@@ -1,0 +1,28 @@
+.my-btn:link,
+.my-btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .7rem 1rem;
+    display: inline-block;
+    border-radius: 10rem;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    position: relative;
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(66, 66, 66, 0.741);
+}
+
+.my-btn:hover {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0 1rem 2rem rgba(190, 188, 188, 0.575);
+    box-shadow: 0 1rem 2rem rgba(190, 188, 188, 0.575);
+}
+
+.my-btn:active {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(168, 161, 161, 0.356);
+    box-shadow: 0 0.5rem 1rem rgba(168, 161, 161, 0.356);
+}

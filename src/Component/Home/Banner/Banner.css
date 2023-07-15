@@ -1,0 +1,93 @@
+.header {
+    color: white;
+    background: linear-gradient(rgba(72, 223, 223, 0.864), rgb(11, 228, 228)), url("../../../asset/Img/sajek.jpg");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.header__logo-box {
+    position: absolute;
+    top: 12px;
+    left: 25px;
+}
+
+.header__logo {
+    height: 2.5rem;
+    width: 4.5rem;
+}
+
+.header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.header__text-box .heading__primary {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+    backface-visibility: hidden;
+}
+
+.header__text-box .heading__primary--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 1.5rem;
+    animation: moveInLeft 2s ease-in-out .2s;
+    animation-fill-mode: forwards;
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.header__text-box .heading__primary--sub {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .75rem;
+    animation: moveInLeft 2s ease-in-out .2s;
+}
+
+.header__text-box .my-btn--animated {
+    animation: animated 1s ease-in-out .2s;
+    animation-fill-mode: backwards;
+}
+
+.header__text-box .my-btn--white:hover::after {
+    -webkit-transform: scaleX(1.3) scaleY(1.6);
+    transform: scaleX(1.3) scaleY(1.6);
+    background-color: white;
+    opacity: 0;
+}
+
+/* Animation */
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(3rem);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(-1rem);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes animated {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}

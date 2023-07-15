@@ -1,0 +1,133 @@
+.my-shadow {
+    box-shadow: 0 0.3rem 1rem rgba(45, 39, 39, 0.898);
+}
+
+.heading-secondary {
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#12dd2a), to(#7eff52));
+    background-image: linear-gradient(#12dd2a, #7eff52);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .2s;
+    letter-spacing: .2rem;
+}
+
+.heading-secondary:hover {
+    -webkit-transform: skewY(1deg) skewX(10deg) scale(1.2);
+    transform: skewY(0deg) skewX(0deg) scale(1.2);
+    text-shadow: 10px 5px 9px rgba(0, 0, 0, 0.266);
+}
+
+.section__tours .card__slide {
+    perspective: 100rem;
+    height: 32rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: relative;
+    transition: all .5s ease-in;
+}
+
+.card__slide-font {
+    transform: rotate(0);
+    transition: all .5s ease-in;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.card-picture {
+    height: 15rem;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
+}
+
+.card-pic-1 {
+    background: url("../../../asset/Img/saintmartin.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+.card-heading-1 {
+    background-image: linear-gradient(rgba(191, 198, 186, 0.816), rgba(130, 129, 122, 0.585));
+    box-decoration-break: clone;
+}
+
+.card-details {
+    position: absolute;
+    margin: 0 auto;
+    margin-left: 22%;
+}
+
+
+
+
+.card-ul {
+    border-bottom: 2px solid rgba(126, 117, 117, 0.462);
+}
+
+.section__tours .card__slide-back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.section__tours .card__slide-back .card-backpart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.section__tours .card__slide-back .card-backpart .card-prize-text {
+    padding: 1rem .5rem;
+    font-size: 1.3rem;
+}
+
+.section__tours .card__slide-back .card-backpart .card-prize-value {
+    font-size: 2rem;
+    padding: 1rem;
+    padding-bottom: 3rem;
+}
+
+
+.section__tours .card__slide .slider-back2 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(116, 255, 116, 0.816)), to(rgba(31, 99, 42, 0.83)));
+    background: linear-gradient(rgba(116, 255, 116, 0.816), rgba(31, 99, 42, 0.83));
+}
+
+.section__tours .card__slide .slider-back3 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 216, 204, 0.816)), to(rgba(61, 164, 228, 0.34))), url("../../../asset/Img/saintmartin.jpg");
+    background: linear-gradient(rgba(92, 216, 204, 0.214), rgba(61, 164, 228, 0.223)), url("../../../asset/Img/saintmartin.jpg");
+}
+
+.section__tours .card:hover .card__slide-font {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transition: all .71s;
+    transition: all .71s;
+}
+
+.section__tours .card:hover .card__slide-back {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transition: all .61s;
+    transition: all .61s;
+}
